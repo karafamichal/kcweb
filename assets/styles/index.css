@@ -1,0 +1,26 @@
+body {
+    background-color: #222; /* Dark background */
+    color: #eee;           /* Light text color */
+    font-family: 'Arial', sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;     /* Make body take full viewport height */
+    margin: 0;             /* Reset default margins */
+}
+
+.message-container {
+    text-align: center;
+}
+
+.message-container h1 {
+    font-size: 4rem;       /* Large text */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Subtle text shadow  */
+    animation: glow 2s ease-in-out infinite alternate; 
+}
+
+@keyframes glow {
+    from { text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); }
+    to { text-shadow: 2px 2px 20px #ffbb33, 0 0 5px #ffbb33; } 
+}
